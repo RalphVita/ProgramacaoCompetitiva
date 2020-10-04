@@ -9,7 +9,16 @@ ou
 docker container exec -it myvjudge /bin/bash
 ```
 
+### Bibliotecas
+#### algorithm
+http://www.cplusplus.com/reference/algorithm/
+
 ### Estruturas
+
+* [Grafo](#grafo)
+* [Union-Find/Disjoint Sets](#union-finddisjoint-sets)
+* [Segment Tree](#segment-tree)
+* [Fenwick Tree](#fenwick-tree)
 
 #### Grafo
 Armazena informação de conectividade entre vértices
@@ -54,3 +63,4 @@ __Ou__
   ~~~ c++
     RSQ(a, b) 
   ~~~
+* Para retornar a soma, é só entrar com os valores, em vez da quantidade de vezes que eles aparacem.

@@ -1,7 +1,7 @@
 # My third makefile
 
 # Name of the project
-PROJ_NAME=Frequentvalues
+PROJ_NAME=Potentiometers
 
 # .c files
 C_SOURCE=$(PROJ_NAME).cpp
