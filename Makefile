@@ -1,7 +1,7 @@
 # My third makefile
 
 # Name of the project
-PROJ_NAME=Potentiometers
+PROJ_NAME=Forests
 
 # .c files
 C_SOURCE=$(PROJ_NAME).cpp
