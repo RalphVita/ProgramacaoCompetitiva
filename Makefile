@@ -1,7 +1,7 @@
 # My third makefile
 
 # Name of the project
-PROJ_NAME=Forests
+PROJ_NAME=MoveBrackets
 
 # .c files
 C_SOURCE=$(PROJ_NAME).cpp

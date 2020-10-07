@@ -102,8 +102,6 @@ int main() {
     string cmd;
     int x, r, y;
     
-    
-
     while (!cin.eof())
     {
         cin >> N;
@@ -120,7 +118,7 @@ int main() {
             cin >> x;
             ft.update(i,x) ;
         }
-
+        //Comentando pra ver se subindo código diferenre, é avaliado direito.
         while (!cin.eof()){
             cin >> cmd;
             if(cmd == "END"){
