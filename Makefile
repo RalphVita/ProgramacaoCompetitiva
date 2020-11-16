@@ -1,7 +1,7 @@
 # My third makefile
 
 # Name of the project
-PROJ_NAME=MoveBrackets
+PROJ_NAME= Divisão\ e\ Conquista/C-K-thNotDivisiblebyn
 
 # .c files
 C_SOURCE=$(PROJ_NAME).cpp
