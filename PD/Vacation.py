@@ -13,5 +13,5 @@ F[0] = Ps[0]
 
 for i in range(1,N):
     F[i] =  [Ps[i][j]+Max(i-1,j) for j in range(3)]
-
+#Comentário
 print(max(F[-1]))
