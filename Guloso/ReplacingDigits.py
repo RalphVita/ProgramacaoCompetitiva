@@ -22,8 +22,6 @@ digitos = [0,0,0,0,0,0,0,0,0,0,0]
 for m in matrix:
     n = [int(i) for i in list(m[0])]
     _min = min(n)
-    #util = sorted([int(i) for i in list(m[1]) if int(i) > min(n)],reverse=True)[0:len(n)]
-    #util = sorted(set([j for j in [int(i) for i in list(m[1])] if j > _min]),reverse=True)
     for i in m[1]:
         digitos[int(i)] += 1
     i = 0
