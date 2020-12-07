@@ -1,7 +1,7 @@
 # My third makefile
 
 # Name of the project
-PROJ_NAME= Divisão\ e\ Conquista/C-K-thNotDivisiblebyn
+PROJ_NAME= Grafos/DefendTheRohan
 
 # .c files
 C_SOURCE=$(PROJ_NAME).cpp
@@ -14,7 +14,7 @@ OBJ=$(subst .cpp,.o,$(C_SOURCE))
 CC=g++
 
 # Flags for compiler
-CC_FLAGS=--std=c++11
+CC_FLAGS=--std=c++14
 
 # Command used at clean target
 RM = rm -rf
