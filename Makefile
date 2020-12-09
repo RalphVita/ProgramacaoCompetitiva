@@ -1,7 +1,7 @@
 # My third makefile
 
 # Name of the project
-PROJ_NAME= Grafos/DefendTheRohan
+PROJ_NAME= P3/AllPairsShortestPath
 
 # .c files
 C_SOURCE=$(PROJ_NAME).cpp
