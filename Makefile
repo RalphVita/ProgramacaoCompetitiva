@@ -14,7 +14,7 @@ OBJ=$(subst .cpp,.o,$(C_SOURCE))
 CC=g++
 
 # Flags for compiler
-CC_FLAGS=--std=c++14
+CC_FLAGS=--std=c++11
 
 # Command used at clean target
 RM = rm -rf
