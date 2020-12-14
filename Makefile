@@ -1,7 +1,7 @@
 # My third makefile
 
 # Name of the project
-PROJ_NAME= P3/AllPairsShortestPath
+PROJ_NAME= P3/BombsNOtheyareMines
 
 # .c files
 C_SOURCE=$(PROJ_NAME).cpp
