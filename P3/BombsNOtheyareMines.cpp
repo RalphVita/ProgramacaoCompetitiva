@@ -115,13 +115,10 @@ int main()
         if (R == 0)
             break;
         
-        //Graph g(R*C);
         int v = R*C;
         vector<int> adj[v]; 
 
-        cin >> rows;
-        cin >> rn >> n;
-
+        
         //Mapeia linhas e colunas
         index = 0;
         for(r=0;r<R;r++){
@@ -130,51 +127,35 @@ int main()
                 bomb[index] = 0;
                 index++;
             }
+        }
 
-            if(r == rn){
+        //Identificar minas
+        cin >> rows;
+        for(;rows > 0;--rows){
+            cin >> rn >> n;
                 for(;n > 0;--n){
                     cin >> cn;
                     bomb[mapa[rn][cn]] = 1;
                 }
-                rows--;
-                if(rows > 0)
-                    cin >> rn >> n;
-            }
-
-
         }
-        
-
-        //Graph g(R*C);
-
-        //cin >> rows;
-
-        // for(;rows > 0;--rows){
-        //     cin >> rn >> n;
-        //         for(;n > 0;--n){
-        //             cin >> cn;
-        //             bomb[mapa[rn][cn]] = 1;
-        //         }
-        // }
 
         for(r=0;r<R;r++)
             for(c=0;c<C;c++){
-              // if(bomb[mapa[r][c]] == 0){
-                    if(c + 1 < C && bomb[mapa[r][c+1]] == 0)
-                        add_edge(adj,mapa[r][c],mapa[r][c+1]);
-                    if(c - 1 > 0 && bomb[mapa[r][c-1]] == 0)
-                        add_edge(adj,mapa[r][c],mapa[r][c-1]);
-                    if(r + 1 < R && bomb[mapa[r+1][c]] == 0)
-                        add_edge(adj,mapa[r][c],mapa[r+1][c]);
-                    if(r - 1 > 0 && bomb[mapa[r-1][c]] == 0)
-                        add_edge(adj,mapa[r][c],mapa[r-1][c]);
-              // }
+                    if(bomb[mapa[r][c]] == 0){
+                        if(c + 1 < C && bomb[mapa[r][c+1]] == 0)
+                            add_edge(adj,mapa[r][c],mapa[r][c+1]);
+                        if(c - 1 >= 0 && bomb[mapa[r][c-1]] == 0)
+                            add_edge(adj,mapa[r][c],mapa[r][c-1]);
+                        if(r + 1 < R && bomb[mapa[r+1][c]] == 0)
+                            add_edge(adj,mapa[r][c],mapa[r+1][c]);
+                        if(r - 1 >= 0 && bomb[mapa[r-1][c]] == 0)
+                            add_edge(adj,mapa[r][c],mapa[r-1][c]);
+                    }
             }
         
         cin >> R >> C;
         cin >> dR >> dC;
 
-        //g.shortestPath(mapa[R][C],mapa[dR][dC]); 
         printShortestDistance(adj, mapa[R][C],mapa[dR][dC], v); 
     }
     

@@ -9,11 +9,15 @@ ans = 0
 def dfs(c,v):
     global vis, ans, G, m, hasgato
     vis[v] = True
+
+    #Verifica gatos consecutivos
     c += hasgato[v]
     if (not hasgato[v]):
         c = 0
     if (c > m):
          return
+        
+        
     f = False
     for i in range(len(G[v])):
         t = G[v][i]
